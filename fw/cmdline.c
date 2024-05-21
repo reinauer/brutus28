@@ -48,6 +48,7 @@ static rc_t cmd_help(int argc, char * const *argv);
 
 static const cmd_t cmd_list[] = {
     { cmd_help,    "?",       0, NULL, " [<cmd>]", "display help" },
+    { cmd_boardid, "boardid", 0, NULL, "", "print board id" },
     { cmd_copy,    "copy",    3, cmd_copy_help,
                         "[bwlqoh] <saddr> <daddr> <len>", "copy memory" },
     { cmd_comp,    "comp",    2, cmd_comp_help,

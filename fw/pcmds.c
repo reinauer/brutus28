@@ -483,6 +483,14 @@ cmd_reset(int argc, char * const *argv)
 }
 
 rc_t
+cmd_boardid(int argc, char * const *argv)
+{
+   printf("BOARD_ID: %02x\n", BOARD_REV);
+   uart_flush();
+   return (RC_SUCCESS);
+}
+
+rc_t
 cmd_cpu(int argc, char * const *argv)
 {
     if (argc < 2)
